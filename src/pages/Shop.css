@@ -1,0 +1,52 @@
+/* Shop.css */
+.shop {
+    min-height: 100vh;
+    background-color: #f3f4f6;
+  }
+  
+  .shop__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .shop__title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  .shop__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 640px) {
+    .shop__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .shop__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .shop__grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .shop-loading,
+  .shop-error {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .shop-error {
+    color: #ef4444;
+  }

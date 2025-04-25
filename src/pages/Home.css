@@ -1,0 +1,57 @@
+/* Home.css */
+.home {
+    min-height: 100vh;
+    background-color: #f3f4f6;
+  }
+  
+  .home__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .home__title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  
+  .home__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .home__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .home__card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .home__card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .home__card-text {
+    color: #374151;
+  }
+  
+  .home__card-list {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    color: #374151;
+  }
+  
+  .home__card-item {
+    margin-bottom: 0.5rem;
+  }

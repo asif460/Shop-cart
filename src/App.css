@@ -1,0 +1,17 @@
+/* App.css */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__main {
+  flex-grow: 1;
+}
+
+.app__footer {
+  background-color: #1f2937;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}

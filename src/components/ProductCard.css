@@ -1,0 +1,89 @@
+/* ProductCard.css */
+.product-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.product-card__content {
+  padding: 1.5rem;
+}
+
+.product-card__image {
+  width: 100%;
+  height: 12rem;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.product-card__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-card__price {
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.product-card__quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.product-card__quantity-btn {
+  background-color: #e5e7eb;
+  padding: 0.25rem 0.75rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card__quantity-btn:hover {
+  background-color: #d1d5db;
+}
+
+.product-card__quantity-btn--decrement {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.product-card__quantity-btn--increment {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.product-card__quantity-input {
+  width: 3rem;
+  text-align: center;
+  padding: 0.25rem 0;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  border-left: none;
+  border-right: none;
+}
+
+.product-card__add-btn {
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card__add-btn:hover {
+  background-color: #1d4ed8;
+}
